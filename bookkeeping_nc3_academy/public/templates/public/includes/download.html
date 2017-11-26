@@ -1,0 +1,30 @@
+<section class="" id="id-download">
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h2 class="text-center text-capitalize  display-3">Think you’re prepared?</h2>
+			<hr>
+
+			<div class="container">
+				<p class="text-center lead">Download and  answer this sample  TESDA Assessment Exam.</p>
+					<form class="form-inline" action="{% url 'public:form_mail' %}" method="post" id="id-form-download">
+						{% csrf_token %}
+						<input type="hidden" name="title" value="Think you’re prepared? Download and  answer this sample  TESDA Assessment Exam">
+
+						<div class="col-xs-12 col-md-4 input-group">
+						    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+							<input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text" name="name" placeholder="What's your name?" required>
+						</div>
+
+						<div class="col-xs-12 col-md-4 input-group">
+						    <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+							<input class="form-control mb-2 mr-sm-2 mb-sm-0" type="email" name="email" placeholder="May I have your email here?" required>
+						</div>
+
+						<div class="col-xs-12 col-md-4 input-group">
+							<button type="submit" class="btn btn-success cursor-pointer">Download NOW!</button>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock title %} | Bookkeeping NC3 Academy</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'font-awesome-4.7.0/css/font-awesome.css' %}">
+    <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+        .btn-page-top-bottom{
+             position:fixed;
+             bottom:0;
+             right:0;
+        }
+        .color-black{
+            color: black;
+        }
+        .color-white{
+            color: #fff;
+        }
+        .color-black{
+            color: #212121;
+        }
+        .color-gray{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .icon-actions{
+            font-size: 30px;
+        }
+        .icon-label{
+            font-size: 20px;
+        }
+        .bg-black{
+            background-color: #212121;
+        }
+        
+    </style>
+    {% block head %}{% endblock head %}
+</head>
+<body data-spy="scroll" data-target="#navbarNav">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded" role="navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="badge badge-default">BookkeepingNC3Academy</span></a>
+      <div class="collapse navbar-collapse scroll" id="navbarNav">
+        <ul class="nav navbar-nav navbar-right" role="tablist">
+                {% block nav %}
+
+                {% endblock nav %}
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+            {% block content %}
+                <div class="content">
+                    <p>Soon to rise...</p>
+                </div>
+            {% endblock content %}
+
+    <div class="copyright py-4 text-center text-white bg-black">
+      <div class="container">
+        <small>Copyright &copy; bookkeepingnc3academy.com 2017</small>
+      </div>
+    </div>
+
+    <div id="id-bottom"></div>
+    
+    <div class="btn-page-top-bottom">
+        <a href="#id-top"><i class="fa fa-arrow-up color-black"></i></a>
+        <a href="#id-bottom"><i class="fa fa-arrow-down color-black"></i></a>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/utils.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/tether.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js' %}"></script>
+
+    {% include 'includes/js/common.html' %}
+    
+    {% block script %}{% endblock script %}
+
+</body>
+</html>

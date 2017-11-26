@@ -1,0 +1,29 @@
+<section class="" id="id-certify">
+	<div class="jumbutron jumbutron-fluid">
+		<div class="container">
+			<h2 class="text-center display-3">Certification</h2>
+			<hr>
+
+			<h3 class="text-center">TESDA Minimum Requirement to become a {{ certification.alias }}</h3>
+
+				<div class="row">
+					<!-- certification topic cards -->
+					{% for topic in certification.topics.all %}
+						<div class="card col-sm-12 col-md-6">
+							<div class="row card-header">
+								<div class="col-1 text-left"><span>{{ forloop.counter }}.</span></div>
+
+								<div class="col-11">
+									<h4 class="card-title text-left"><a href="{% url 'certifications:topic_detail' topic.id %}" target="_blank">{{ topic.topic}}</a></h4>
+									
+								</div>
+							</div>
+							<div class="card-block">
+								<p class="card-text">{{ topic.description }}</p>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+		</div>
+	</div>
+</section>

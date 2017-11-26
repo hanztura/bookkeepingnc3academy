@@ -1,0 +1,28 @@
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.action-delete').click(function(e){
+                if (!confirm('Are you sure to delete this record?')) {
+                    e.preventDefault()
+                    return
+                } else {
+                }
+            })
+
+            $('.action-save').click(function(e){
+                if (!confirm('Kindly make sure to review entries. Continue saving?')) {
+                    e.preventDefault()
+                    return
+                } else {
+                }
+            })
+
+            $('.action-detail').click(function(e){
+                alias = $(this).data('action-alias')
+                if (!confirm('View ' + alias + '\s detail?')) {
+                    e.preventDefault()
+                    return
+                } else {
+                }
+            })
+        })
+    </script>

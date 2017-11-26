@@ -1,0 +1,45 @@
+{% extends "base_project.html" %}
+
+{% load static %}
+
+{% block title %}Certification Topic - Detail{% endblock title %}
+
+{% block nav %}
+	{{ block.super }}    
+{% endblock nav %}
+
+{% block content %}
+
+
+    <form id="id-form-update" enctype="multipart/form-data" action="{% url 'certifications:topic_update' model.id%}" method="post" class="form">
+        {% csrf_token %}
+
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <a data-toggle="collapse" href="#id-div-model" aria-expanded="true">
+                    <div class="panel-heading bg-inverse color-gray">
+                        <h4 class="panel-title">
+                            Topic
+                        </h4>
+                    </div>
+                    
+                </a>
+            <div id="id-div-model" aria-expanded="true" class="collapse show" >
+                <div class="panel-body">
+                    <table class="table table-condensed table-bordered" id="id-table-contact">
+                        <tbody>
+                            {{ form.as_table }}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- submit button -->
+            <button form='id-form-update' class="btn btn-success btn-block action-save" type="submit" title="Update" id='id-bottom'>
+                Save
+            </button>
+    </form>
+
+{% endblock content %}
