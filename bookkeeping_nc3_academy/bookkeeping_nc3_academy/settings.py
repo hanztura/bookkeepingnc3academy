@@ -139,6 +139,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://stackoverflow.com/questions/31324005/django-1-8-sending-mail-using-gmail-smtp
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'it.bookkeepingnc2academy@gmail.com'
-EMAIL_HOST_PASSWORD = 'pa$$w0rd'
+EMAIL_HOST_USER = 'bookkeepingnc3academy@gmail.com'
+EMAIL_HOST_PASSWORD = '@cc3$s2109'
 EMAIL_PORT = 587

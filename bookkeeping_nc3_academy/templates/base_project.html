@@ -14,6 +14,7 @@
     <style type="text/css">
         html, body {
             height: 100%;
+            font-family: "Segoe UI";
         }
         .btn-page-top-bottom{
              position:fixed;
@@ -41,18 +42,38 @@
         .bg-black{
             background-color: #212121;
         }
-        
+        .bg-facebook-blue{
+            background-color: #3B5998;
+        }
+        .bg-facebook-medium-blue{
+            background-color: #6d84b4;
+        }
+        .bg-facebook-lighter-blue{
+            background-color: #afbdd4;
+        }
+        .bg-facebook-lightest-blue{
+            background-color: #d8dfea;
+        }
+        .color-facebook-lightest-blue{
+            color: #d8dfea;
+        }
+        .btn-social {
+          width: 3.25rem;
+          height: 3.25rem;
+          font-size: 1.25rem;
+          line-height: 2rem; 
+        }
     </style>
     {% block head %}{% endblock head %}
 </head>
 <body data-spy="scroll" data-target="#navbarNav">
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded" role="navigation">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-facebook-blue" role="navigation">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><span class="badge badge-default">BookkeepingNC3Academy</span></a>
+      <a class="navbar-brand" href="#" style="color: #d8dfea;"><strong>BookkeepingNC3Academy</strong></a>
       <div class="collapse navbar-collapse scroll" id="navbarNav">
-        <ul class="nav navbar-nav navbar-right" role="tablist">
+        <ul class="nav navbar-nav navbar-right" role="tablist" style="text-decoration: underline;">
                 {% block nav %}
 
                 {% endblock nav %}
@@ -69,7 +90,7 @@
                 </div>
             {% endblock content %}
 
-    <div class="copyright py-4 text-center text-white bg-black">
+    <div class="copyright py-4 text-center text-white bg-facebook-blue">
       <div class="container">
         <small>Copyright &copy; bookkeepingnc3academy.com 2017</small>
       </div>

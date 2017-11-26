@@ -6,44 +6,43 @@
     {{ block.super }}
     <!-- about us -->
     <li class="nav-item ">
-      <a class="nav-link btn btn-secondary" href="#id-about-us">About us
+      <a class="nav-link  text-white" href="#id-about-us">About us
       </a>
     </li>
 
     <!-- pass nc3 -->
-    <li class="nav-item ">
-      <a class="nav-link btn btn-secondary" href="#id-pass-nc3">Bookkeeping NC3
-      </a>
+    <li class="nav-item">
+        <a class="nav-link  text-white" href="#id-pass-nc3">Bookkeeping NC3</a>
     </li>
 
     <!-- certify -->
     <li class="nav-item">
-      <a class="nav-link  btn btn-secondary" href="#id-certify">Certify</a>
+        <a class="nav-link  text-white" href="#id-certify">Certify</a>
     </li>
 
     <!-- practice -->
     <li class="nav-item">
-      <a class="nav-link  btn btn-secondary" href="#id-practice">Practice</a>
+      <a class="nav-link  text-white" href="#id-practice">Practice</a>
     </li>
 
     <!-- download -->
     <li class="nav-item">
-      <a class="nav-link  btn btn-secondary" href="#id-download">Downloads</a>
+      <a class="nav-link  text-white" href="#id-download">Downloads</a>
     </li>
 
     <!-- courses -->
     <li class="nav-item">
-      <a class="nav-link  btn btn-secondary" href="#id-courses">Take a Course</a>
+      <a class="nav-link  text-white" href="#id-courses">Take a Course</a>
     </li>
 
     <!-- coach -->
     <li class="nav-item">
-      <a class="nav-link  btn btn-secondary" href="#id-coach">Get my Coach</a>
+      <a class="nav-link  text-white" href="#id-coach">Get my Coach</a>
     </li>
 
     <!-- contact -->
     <li class="nav-item">
-      <a class="nav-link  btn btn-secondary" href="#id-contact">Contact</a>
+      <a class="nav-link  text-white" href="#id-contact">Contact</a>
     </li>
 {% endblock nav %}
 
@@ -60,13 +59,18 @@
           position: relative;
         }
         #id-top {
-            padding-top: 70px;
+            padding-top: 50px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
     </style>
 {% endblock head %}
 
 {% block content %}
     <div class="container-fluid" id="id-top">
+        <!-- header -->
+        {% include 'public/includes/header.html' %}
+
         <!-- about us -->
         {% include 'public/includes/about_us.html' %}
 

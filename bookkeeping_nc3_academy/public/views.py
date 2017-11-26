@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.core.mail import EmailMessage, send_mail
+from django.http import HttpResponse
 
 from certifications.models import Certification, Topic
 from courses.models import Course
@@ -45,6 +46,4 @@ def form_mail(request):
 			)
 
 			if confirmed:
-				return render(request, 'public/alerts/email_sent.html')				
-
-
+				return render(request, 'public/alerts/email_sent.html')

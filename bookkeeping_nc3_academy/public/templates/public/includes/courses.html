@@ -1,5 +1,5 @@
 <section class="" id="id-courses">
-	<div class="jumbutron jumbutron-fluid">
+	<div class="jumbutron jumbutron-fluid bg-facebook-lightest-blue">
 		<div class="container">
 			<h2 class="text-center display-3">Courses</h2>
 			<hr>
@@ -9,7 +9,7 @@
 				<div class="row">
 					<!-- certification topic cards -->
 					{% for course in courses %}
-						<div class="card col-sm-12 col-md-6" >
+						<div class="card col-sm-12 col-md-6 mb-2" >
 							<img class="card-img-top img-fluid image-link cursor-pointer" src="media/{{ course.course_image }}" alt="{{ course.course }} image"  width="100%" height="270px" data-image-link="{{ course.url }}">
 							<div class="card-block">
 								<h4 class="card-title text-center"><a href="{{ course.url }}" target="_blank">{{ course.course }}</a></h4>
