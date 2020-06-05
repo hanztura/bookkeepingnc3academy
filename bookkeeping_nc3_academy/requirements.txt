@@ -7,7 +7,7 @@ checkbox-support==0.22
 command-not-found==0.3
 cryptography==1.2.3
 defer==1.0.6
-Django==1.11.6
+Django==1.11.29
 django-admin==1.0.13
 django-crispy-forms==1.7.0
 django-excel-response2==2.0.8
